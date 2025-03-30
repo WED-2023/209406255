@@ -46,7 +46,11 @@
 
     <section id="like">
         <h2>Like</h2>
+        <h4>Please press "Like" if you liked Jimmy Page website</h4>
+        <button id="like-button">Like ❤️</button>
 
+        <h4>Like Jimmy Page Facebook page:</h4>
+        <!-- Facebook Like Button -->
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" 
             src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v22.0">
@@ -60,13 +64,15 @@
             data-size="large">
         </div>
     </section>
+    
 
     <section id="qrcode">
         <h2>QR Code</h2>
-        <p>QR Code linking to your site.</p>
-        <img src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=https://wed-2023.github.io/209406255/" 
-        alt="QR Code for my website">
+        <h4>Please share website QR code with friends!</h4>
+        <img class="qr_image" width="130" height="130" src="https://qrfree.kaywa.com/?l=1&amp;s=8&amp;d=https%3A%2F%2Fwed-2023.github.io%2F209406255%2F" alt="QRCode" style="display:inline; border: 2px solid #00bfff; border-radius: 10px; padding: 10px;">
     </section>
+    
+    
 
     <section id="qa">
         <h2>Q&A</h2>
@@ -89,14 +95,15 @@
 
     <section id="contact">
         <h2>Contact Me</h2>
+        <h4>Please leave a message, and we'll pass it on to Jimmy as quickly as possible!</h4>
         <form>
-            <label for="email">Your Email:</label><br>
-            <input type="email" id="email" required><br><br>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" required>
     
-            <label for="message">Message:</label><br>
-            <textarea id="message" rows="4" required></textarea><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" required></textarea>
     
-            <label for="emoji">Choose an Emoji:</label><br>
+            <label for="emoji">Choose an Emoji:</label>
             <select id="emoji">
                 <option>😊</option>
                 <option>😎</option>
@@ -108,7 +115,7 @@
                 <option>💡</option>
                 <option>🎶</option>
                 <option>🌟</option>
-            </select><br><br>
+            </select><br>
     
             <button type="submit">Send</button>
         </form>
